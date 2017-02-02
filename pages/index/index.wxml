@@ -1,0 +1,22 @@
+<view class="wrapper">
+  <view class="loginform">
+    <view id="owl-login">
+      <image class="head" src="../../images/owl-login.png"></image>
+      <view class="hand {{inputPassword ? 'hand-password' : ''}}"></view>
+      <view class="hand hand-r {{inputPassword ? 'hand-r-password' : ''}}"></view>
+      <view class="arms">
+        <image class="arm {{inputPassword ? 'arm-password' : ''}}" src="../../images/owl-login-arm.png"></image>
+        <image class="arm arm-r {{inputPassword ? 'arm-r-password' : ''}}" src="../../images/owl-login-arm.png"></image>
+      </view>
+    </view>
+    <view class="control-group">
+      <view class="control">
+        <input type="number" bindinput="bindAccountInput" placeholder="一卡通号码"></input>
+      </view>
+      <view class="control">
+        <input type="password" bindinput="bindPasswordInput" bindfocus="pwdFocus" bindblur="pwdBlur" placeholder="密码"></input>
+      </view>
+      <button disabled="{{isLoading}}" loading="{{isLoading}}" bindtap="bindIdentity" type="primary">绑定身份</button>
+    </view>
+  </view>
+</view>

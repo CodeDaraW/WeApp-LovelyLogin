@@ -1,0 +1,12 @@
+{
+  "pages":[
+    "pages/index/index"
+  ],
+  "window":{
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#0E932E",
+    "navigationBarTitleText": "一个可爱的登陆界面",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": false
+  }
+}
